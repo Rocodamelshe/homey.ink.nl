@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Homey.ink</title>
+    
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=user-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/png" />
+    <link rel="apple-touch-icon" href="./img/favicon.png">
+    <link rel="stylesheet" type="text/css" href="./css/homey.ink.css">
+    
+    <script type="text/javascript" src="//cdn.athom.com/athom-api/2.1.186/athom-api.min.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script type="text/javascript" src="./js/polyfill.js"></script>
+    <script type="text/javascript" src="./js/later.js"></script>
+    <script type="text/javascript" src="./js/homey.ink.helpers.js"></script>
+    <script type="text/javascript" src="./js/homey.ink.app.js"></script>
+    
+    <!--script async src="https://www.googletagmanager.com/gtag/js?id=UA-54367249-20"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-54367249-20');
+    </script-->
+  </head>
+  <body>
+    
+    <div id="container">
+      
+      <div id="container-inner">
+        
+        <div id="header">
+          <div id="info-panel"></div>
+
+          <div id="logo"></div>
+          
+          <div id="battery-warning"></div>
+
+          <div id="text">
+            <div id="text-large"></div>
+            <div id="text-small"></div>
+                          <script>
+<!-- Begin
+var now = new Date();
+var days = new Array("Zondag", "Maandag", "Dinsdag", "Woensdag", "Donderdag", "Vrijdag", "Zaterdag");
+var months = new Array("januari","februari", "maart", "april", "mei", "juni", "juli", "augustus", "september", "oktober", "november", "december");
+var date = ((now.getDate()<10) ? "0" : "")+ now.getDate();
+function fourdigits(number) {
+    return (number < 1000) ? number + 1900 : number;
+}
+today = days[now.getDay()] + " " +
+             date + " " +
+             months[now.getMonth()] + " " +
+               (fourdigits(now.getYear())) ;
+document.write(today);
+// End -->
+</script>
+          </div>
+          
+          <div id="weather">
+            <div id="weather-temperature"></div>
+            <div id="weather-state">
+              <div id="weather-state-icon"></div>
+            </div>
+          </div>
+
+          <div id="sun-events">
+            <div id="sunrise-icon"></div>
+            <div id="sunrise-time"></div>
+            <div id="sunset-icon"></div>
+            <div id="sunset-time"></div>
+          </div>
+        </div>
+        
+        <div id="content">
+          <div id="flows" class="favorites">
+            <h2><span>Favorite Flows</span></h2>
+            <div id="flows-inner" class="flows favorites-inner"></div>
+          </div>
+          
+          <div id="devices" class="favorites">
+            <h2><span>Favorite Devices</span></h2>
+            <div id="devices-inner" class="devices favorites-inner"></div>
+          </div>
+        </div>
+      
+      </div>
+    </div>
+    
+  </body>
+</html>

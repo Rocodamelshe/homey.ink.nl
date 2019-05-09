@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700');
+
+body {
+  font-family: Roboto, Helvetica, sans-serif;
+  background: -webkit-linear-gradient(55deg, #009785 0%, #245AA5 50%, #B800E9 100%);
+  background-attachment: fixed;
+  color: white;
+}
+
+.container-dark {
+  background-color: Black;
+  opacity: 0.6;
+}
+
+#text-large:after {
+  background: white;
+}
+
+#info-panel {
+  width: 75vw;
+  background: -webkit-linear-gradient(55deg, #009785 0%, #245AA5 50%, #B800E9 90%);
+  background-attachment: fixed;
+  border: 1px solid #009785;
+  border-radius: 6px;
+  box-sizing: border-box;
+  z-index: 99;
+  opacity: 0.95;
+}
+
+#logo {
+  background-image: url(../img/logo-white.png);  
+}
+
+#battery-warning {
+  background: red;
+  -webkit-mask-image: url(../img/battery.png);
+}
+
+#weather-state {
+
+}
+  #weather-state #weather-state-icon {
+    background: white;
+    background-repeat: no-repeat;
+    background-size: 100px;
+  }
+
+#sun-events {
+
+}
+  #sunrise-icon {
+    background: url(../img/sunrise-color.png) no-repeat center center;
+    background-size: 100%;      
+  }
+  #sunset-icon {
+    background: url(../img/sunset-color.png) no-repeat center center;
+    background-size: 100%;
+  }
+
+.favorites h2 {
+  font-weight: 300;
+  color: white;
+}
+.favorites h2:after {
+  background: linear-gradient(to right, rgba(255,255,255,0.5) 0%, rgba(255,255,255,0) 100%);
+  height: 1px;
+}
+
+.flow {
+  border: none;
+  background: rgba(255,255,255,0.25);
+  box-shadow: 0 2px 2px rgba(0,0,0,0.1);
+}
+.flow.running:before {
+  background-color: white;
+  color: #61CC38;
+}
+  .flow .name {
+    color: white;
+  }
+  .flow .play {
+    background-image: url(../img/play-color.png);
+  }
+
+.device {
+  background-color: white;
+  border: none;
+  box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+}
+  .device.alarm {
+    background-color: orange;
+  }
+  .device.push {
+    background-color: grey;
+  }
+  .device .value {
+    color: black;
+    font-weight: 300;
+  }
+  .device .name {
+    color: black;
+    font-weight: 300;
+  }
